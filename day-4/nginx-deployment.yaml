@@ -44,4 +44,12 @@ spec:
           timeoutSeconds: 5
           successThreshold: 2
           failureThreshold: 3
+        startupProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
+          successThreshold: 2
+          failureThreshold: 1
+          
 status: {}
